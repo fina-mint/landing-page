@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import HeroImg from '../public/hero.png'
 
 export default function Hero() {
 
@@ -29,8 +30,8 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className='flex  order-1 md:order-last md:min-w-3/5'>
-                <Image src="/../public/hero.png" alt="" width={900} height={900}/>
+              <div className='flex  order-1 md:order-last md:max-w-3/5'>
+                <Image src={HeroImg} alt=""/>
               </div>  
               
           </div>
