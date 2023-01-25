@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import LogoImg from '../public/logo.png'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -21,7 +22,7 @@ export default function Header() {
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Fina-Mint</span>
-                <Image src={'/../public/logo.png'} width={50} height={50} />
+                <Image src={LogoImg} width={50} height={50} />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -56,7 +57,7 @@ export default function Header() {
                 <div className="flex">
                   <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Fina-mint</span>
-                    <Image src={'/../public/logo.png'} width={50} height={50} />
+                    <Image src={LogoImg} width={50} height={50} />
                   </a>
                 </div>
                 <div className="flex">
