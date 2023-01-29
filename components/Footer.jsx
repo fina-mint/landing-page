@@ -51,18 +51,18 @@ const navigation = [
   
   export default function Footer() {
     return (
-      <footer className="bg-slate-900">
+      <footer className="bg-neutral-50">
         <div className="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8 border-t border-orange-50">
           <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-pink-300 hover:text-pink-500">
+              <a key={item.name} href={item.href} className="text-orange-400 hover:text-orange-500">
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
+                <item.icon className="h-8 w-8" aria-hidden="true" />
               </a>
             ))}
           </div>
           <div className="mt-8 md:order-1 md:mt-0">
-            <p className="text-center text-xs leading-5 text-orange-200">
+            <p className="text-center text-sm leading-5 text-orange-400">
               &copy; 2023 Fina-Mint, Inc. All rights reserved.
             </p>
           </div>

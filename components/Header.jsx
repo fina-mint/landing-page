@@ -15,14 +15,14 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="sticky top-0 z-10 isolate bg-slate-900">
+    <div className="sticky top-0 z-10 isolate bg-neutral-50">
       <div className="px-6 pt-6 lg:px-8">
         <div>
           <nav className="flex h-9 items-center justify-between" aria-label="Global">
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Fina-Mint</span>
-                <Image src={LogoImg} width={50} height={50} />
+                <Image src={LogoImg} width={70} height={70} />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -37,7 +37,7 @@ export default function Header() {
             </div>
             <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="font-semibold text-orange-100 hover:text-orange-400">
+                <a key={item.name} href={item.href} className="font-semibold text-xl text-black hover:text-orange-400">
                   {item.name}
                 </a>
               ))}
@@ -45,7 +45,7 @@ export default function Header() {
             <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
               <a
                 href="#"
-                className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-pink-300 shadow-sm ring-1 ring-pink-400/10 hover:ring-pink-400/20"
+                className="inline-block rounded-lg px-3 py-1.5 text-xl font-semibold text-orange-400 shadow-lg ring-2 ring-black hover:ring-orange-400 hover:text-black"
               >
                 Contact
               </a>
@@ -57,7 +57,7 @@ export default function Header() {
                 <div className="flex">
                   <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Fina-mint</span>
-                    <Image src={LogoImg} width={50} height={50} />
+                    <Image src={LogoImg} width={70} height={70} />
                   </a>
                 </div>
                 <div className="flex">

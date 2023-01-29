@@ -1,34 +1,36 @@
+import Image from 'next/image'
+import LogoGif from '../public/logo.gif'
 import { ChartBarIcon, CreditCardIcon, BoltIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
     name: 'Wealth Management Dashboard',
-    description: 'Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.',
+    description: 'We uses advanced artificial intelligence to analyze your financial data and provide personalized advice on savings and investments.',
     icon: ChartBarIcon,
   },
   {
     name: 'Credit Card',
     description:
-      'Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.',
+      'Introducing the Fina-Mint credit and debit card, the ultimate financial tool for the tech-savvy saver. Our innovative card is connected to a financial app that uses advanced technology to analyze your spending behavior and provide personalized recommendations for reaching your savings goals.',
     icon: CreditCardIcon,
   },
   {
     name: 'Instant transfers',
     description:
-      'Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia.',
+      'Make instant transfers to pay your bills and manage your finances, so you never have to worry about late payments or penalties.',
     icon: BoltIcon,
   },
   {
     name: 'Tax Management',
     description:
-      'Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.',
+    "Providing you with a Tax Management Advisor that helps you to navigate the complex world of taxes and make sure you're paying the right amount.",
     icon: CurrencyDollarIcon,
   },
 ]
 
 export default function Features() {
   return (
-    <div className="overflow-hidden bg-slate-900">
+    <div className="overflow-hidden bg-neutral-50">
       <div className="relative mx-auto max-w-7xl py-24 px-6 lg:px-8 md:py-32">
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-12 xl:gap-x-16">
@@ -36,18 +38,20 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name}>
                 <dt>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-300 text-pink-50">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-400 text-neutral-50">
                     <feature.icon className="h-8 w-8" aria-hidden="true" />
                   </div>
-                  <p className="mt-6 text-lg font-semibold leading-8 text-pink-400">{feature.name}</p>
+                  <p className="mt-6 text-xl font-semibold leading-8 text-pink-400">{feature.name}</p>
                 </dt>
-                <dd className="mt-2 text-base text-orange-100">{feature.description}</dd>
+                <dd className="mt-2 text-base text-black">{feature.description}</dd>
               </div>
             ))}
           </dl>
           <div className="lg:col-span-1">
 
-            <h2 className="text-4xl font-bold tracking-tight text-orange-100 sm:text-4xl">A better way to save money.</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-black sm:text-4xl">A better way to save money.</h2>
+            <Image src={LogoGif}/>
+
           </div>
         </div>
       </div>
